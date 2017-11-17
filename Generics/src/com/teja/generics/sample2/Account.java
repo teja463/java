@@ -1,14 +1,21 @@
 package com.teja.generics.sample2;
 
-public class Account<T extends BaseAccount> {
+public class Account {
 
-	private T account;
+	private String accountType;
 	
-	public Account(T account){
-		this.account = account;
+	public void setAccountType(String accountType) {
+		this.accountType = accountType;
 	}
 	
-	public String getAccountType(T t){
-		return t.getAccountType();
+	public String getAccountType() {
+		return accountType;
 	}
+
+	@Override
+	public String toString() {
+		return accountType;
+	}
+	
+	
 }
