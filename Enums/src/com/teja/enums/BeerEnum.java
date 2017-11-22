@@ -20,20 +20,11 @@ public class BeerEnum {
 		
 	}
 	
-	
-	public class Test{
-	
-		public static final String NAME = "Teja"; 
-	}
-	
 	public static void main(String[] args) {
 		Beer[] beers = Beer.values();
 		for(Beer beer : beers){
 			System.out.println(beer.getPrice());
 		}
-		
-		System.out.println(BeerEnum.Test.NAME);
-		
 	} 
 	
 }
