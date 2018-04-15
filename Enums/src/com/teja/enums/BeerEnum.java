@@ -10,6 +10,7 @@ public class BeerEnum {
 		Beer(){
 			this.price = 70;
 		}
+		
 		private Beer(int price){
 			this.price = price;
 		}
