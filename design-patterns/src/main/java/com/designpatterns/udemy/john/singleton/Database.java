@@ -1,8 +1,8 @@
-package com.designpatterns.singleton;
+package com.designpatterns.udemy.john.singleton;
 
 public class Database {
 
-    private static Database instance = new Database();
+    private static final Database instance = new Database();
 
 
     private Database(){}

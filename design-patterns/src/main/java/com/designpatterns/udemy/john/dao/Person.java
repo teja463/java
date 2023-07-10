@@ -1,4 +1,4 @@
-package com.designpatterns.dao;
+package com.designpatterns.udemy.john.dao;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

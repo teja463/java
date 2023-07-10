@@ -1,4 +1,4 @@
-package com.designpatterns.dao;
+package com.designpatterns.udemy.john.dao;
 
 public class MySqlDAOFactory implements DAOFactory {
 

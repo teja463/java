@@ -1,4 +1,4 @@
-package com.designpatterns.singleton;
+package com.designpatterns.udemy.john.singleton;
 
 public class Demo01 {
     public static void main(String[] args) {
