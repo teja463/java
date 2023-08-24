@@ -1,4 +1,4 @@
-package com.designpatterns.udemy.john.dao;
+package com.designpatterns.udemy.john.abstractfactory;
 
 public class OraclePersonDAO implements PersonDAO{
 
