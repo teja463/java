@@ -1,8 +1,5 @@
 package com.designpatterns.journaldev.structural.proxy;
 
-import com.designpatterns.journaldev.structural.proxy.CommandExecutor;
-import com.designpatterns.journaldev.structural.proxy.CommandExecutorProxy;
-
 import java.io.IOException;
 
 public class Demo {
