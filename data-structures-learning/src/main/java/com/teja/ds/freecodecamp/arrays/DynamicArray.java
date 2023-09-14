@@ -1,7 +1,5 @@
 package com.teja.ds.freecodecamp.arrays;
 
-import java.util.Arrays;
-
 @SuppressWarnings("unchecked")
 public class DynamicArray <T>{
 
@@ -98,6 +96,9 @@ public class DynamicArray <T>{
 
     @Override
     public String toString() {
+        if(size()<=0){
+            return "";
+        }
         StringBuilder str = new StringBuilder("[");
         for(int i=0;i<len-1; i++){
             str.append(arr[i]).append(",");
