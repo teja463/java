@@ -1,7 +1,5 @@
 package com.teja.ds.freecodecamp.arrays;
 
-import com.teja.ds.freecodecamp.linkedlist.DoubleLinkedList;
-
 public class SingleLinkedList<T> {
 
     private int size = 0;
