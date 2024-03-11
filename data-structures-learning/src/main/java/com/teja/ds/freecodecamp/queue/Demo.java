@@ -1,4 +1,4 @@
-package com.teja.ds.freecodecamp.arrays.queue;
+package com.teja.ds.freecodecamp.queue;
 
 public class Demo {
 
