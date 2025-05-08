@@ -1,4 +1,4 @@
-package com.teja.practice;
+package com.teja.practice.sendreceive;
 
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
@@ -20,7 +20,7 @@ public class Sender {
             channel.queueDeclare(QUEUE_NAME, false, false, false, null);
             for(int i = 0; i< 10; i++){
                 String message = "Hello World!!!" + random.nextInt(100);
-                // simulating user wait
+                // simulating multiple users sending requests
                 Thread.sleep(1000);
                 channel.basicPublish("", QUEUE_NAME, null, message.getBytes());
                 System.out.println("[x] Sent '"+message+"'");
