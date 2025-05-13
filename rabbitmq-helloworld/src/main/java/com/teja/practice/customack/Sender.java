@@ -17,7 +17,6 @@ public class Sender {
     public static void main(String[] args) throws IOException, TimeoutException {
         ConnectionFactory factory = new ConnectionFactory();
         factory.setHost("localhost");
-        Random random = new Random();
         try (Connection connection = factory.newConnection(); Channel channel = connection.createChannel()) {
 
             channel.queueDeclare(QUEUE_NAME, true, false, false, null);

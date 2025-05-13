@@ -20,6 +20,6 @@
 - Any number of queues can be subscribed to that exchange
 - All the subscried  queues will receive the message
 - Run the Publisher from intellij
-- To simulate multiple subscribers open two command prompts and execute ` java -cp ".;.\lib\amqp-client-5.25.0.jar;.\lib\slf4j-api-1.7.36.jar" .\src\main\java\com\teja\practice\pubsub\Subscriber.java
+- To simulate multiple subscribers open two command prompts and execute ` java -cp ".;.\lib\amqp-client-5.25.0.jar;.\lib\slf4j-api-1.7.36.jar" .\src\main\java\com\teja\practice\pubsub_fanout\Subscriber.java
   `
 - 

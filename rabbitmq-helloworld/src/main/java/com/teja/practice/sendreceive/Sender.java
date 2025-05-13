@@ -15,11 +15,10 @@ public class Sender {
     public static void main(String[] args) throws IOException, TimeoutException, InterruptedException {
         ConnectionFactory factory = new ConnectionFactory();
         factory.setHost("localhost");
-        Random random = new Random();
         try(Connection connection = factory.newConnection(); Channel channel = connection.createChannel()){
             channel.queueDeclare(QUEUE_NAME, false, false, false, null);
             for(int i = 0; i< 10; i++){
-                String message = "Hello World!!!" + random.nextInt(100);
+                String message = "Hello World!!! " + i;
                 // simulating multiple users sending requests
                 Thread.sleep(1000);
                 channel.basicPublish("", QUEUE_NAME, null, message.getBytes());

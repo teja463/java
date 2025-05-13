@@ -1,5 +1,6 @@
-package com.teja.practice.pubsub;
+package com.teja.practice.pubsub_fanout;
 
+import com.rabbitmq.client.BuiltinExchangeType;
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
@@ -15,7 +16,7 @@ public class Publisher {
         factory.setHost("localhost");
         try (Connection connection = factory.newConnection();
              Channel channel = connection.createChannel()) {
-            channel.exchangeDeclare(exchangeName, "fanout");
+            channel.exchangeDeclare(exchangeName, BuiltinExchangeType.FANOUT);
             for (int i = 1; i <= 100; i++) {
                 String message = "Log "+i;
                 Thread.sleep(500);
